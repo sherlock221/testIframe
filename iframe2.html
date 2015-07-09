@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div>
+   外层
+    <iframe width="700" height="500" src="http://10.10.68.11/testIframe/iframe.html" id="frameId"></iframe>
+</div>
+
+
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+
+<script type="text/javascript">
+    document.domain = "localhost";
+//    $.get("http://172.16.130.93:8080/file/upload/savefileFromUEditor.shtml",function(res){
+//        console.log(res);
+//
+//    });
+
+console.log($("#frameId")[0].contentDocument.domain);
+
+</script>
+
+</body>
+</html>
